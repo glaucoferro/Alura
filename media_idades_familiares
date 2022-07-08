@@ -1,0 +1,26 @@
+<script>
+
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+
+    var idadepedro = 28;
+    var idademarta = 32;
+    var idadejorge = 60;
+    var idadebeto = 77;
+    var totalidade = (idadebeto + idadepedro + idademarta +  idadejorge)
+    var medida = totalidade/4;
+
+    mostra  (media)
+
+}
+
+</script>
