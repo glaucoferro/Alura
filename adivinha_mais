@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+
+<input/>
+
+<button>Compare com meu segredo</button>    
+
+<script>
+
+    var input = document.querySelector("input");
+
+</script>
