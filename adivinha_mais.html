@@ -6,21 +6,32 @@
 
 <script>
 
-    var segredo= [5,6,7];
+    var segredo= [5,6,7,2];
 
     var input = document.querySelector("input");
     input.focus();
 
 function    verifica () {
 
-    
-    if (input.value == segredo) {
+    var achou = false;
+
+    for(var posicao = 0; posicao < segredo.length; posicao++) {
+  
+        if (input.value == segredo[posicao]) {
 
             alert ("ACERTOU MISÉRA");
-    } else {
+            achou=true;
+            break;
 
+        }
+
+    }
+    
+        if (achou == false) {
             alert ("voce errou");
     }
+
+
     
     input.value = "";
     input.focus();
