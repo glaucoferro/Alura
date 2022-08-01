@@ -6,7 +6,33 @@
 
 <script>
 
-    var segredo= [5,6,7,2];
+    function sorteia() {
+
+        return Math.round(Math.random()*10);
+
+    }
+
+
+    function sorteianumeros(quantidade) {
+
+        var segredo = [];
+        
+        var numero = 1;
+
+        while(numero <= quantidade)  {
+
+            var numeroaleatorio =  sorteia();   
+            segredo.push(numeroaleatorio);
+            numero++;
+
+        }
+
+        return segredo;
+    }
+
+    var segredo = sorteianumeros(3);
+
+
 
     var input = document.querySelector("input");
     input.focus();
